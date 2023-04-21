@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Recent Contacts Added">
+        <div class="slds-var-m-around_medium">
+    <ul>
+        <template for:each={accounts} for:item="account">
+            <li key={account.Id}>{account.Name}</li>
+        </template>
+    </ul>
+</div>
+</lightning-card>
+</template>
